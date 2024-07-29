@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import Navbar from "@/components/Navbar";
 
 const figtree = Figtree({ subsets: ["latin"] });
 
@@ -24,6 +25,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <div className="flex flex-col container mx-auto py-4">
+            <Navbar />
+          </div>
           {children}
         </ThemeProvider>
       </body>
