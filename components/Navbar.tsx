@@ -13,6 +13,7 @@ export default function Navbar() {
         <div className="flex  ml-10 gap-5">
           <Link href="/">Home</Link>
           <Link href="/weather-app">Weather</Link>
+          <Link href="/products">Products</Link>
         </div>
       </div>
       <div className="flex gap-8">
